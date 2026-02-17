@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main () {
+    // Pre-filled details
+    string name = "Gideon kwesi Asare";
+    string id = "01240736d"; 
+    int level = 200;
+    int choice;
+
+    cout << "--WEEK ONE ATTENTANCE SYSTEM--/n";
+    {
+        cout <<"nMenu: /n";
+        cout <<"1. view student Details/n";
+        cout << "2. Exit/n";
+        cout << "enter choice: ";
+        cin >> choice;
+
+        if (choice==1) {
+            cout << "n/--student Details--/n";
+            cout << "Name: " << name << endl;
+            cout << "ID: " << id << endl;
+            cout << "level: " << level << endl;
+        }
+        else if (choice == 2) {
+            cout << "Program ended. /n";
+        }
+        else {
+            cout << "Invaid choice! Try again. /n";
+        }
+    } while (choice !=2);
+    return 0;
+}
